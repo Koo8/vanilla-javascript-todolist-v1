@@ -1,0 +1,80 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(205, 237, 124);
+}
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 300px;
+    text-align: center;
+    margin-top: 20px;
+}
+input, button {   
+    padding: 5px;
+}
+input {
+    margin-right: 5px;
+}
+
+button {
+     background-color: rgb(237, 246, 214);
+     border:none;
+     box-shadow:  0 0 5px rgba(0, 0, 0, 0.2);    
+     
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+}
+
+#addTaskBtn {
+    animation: pulse 3s infinite ease-in-out;
+}
+
+.input-container {
+    width: full;
+    display: flex;
+    justify-content: space-around;
+}
+
+ul {
+    list-style: none;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-right: 20px;
+}
+li {
+    width: full;
+    display: flex;
+    justify-content: space-between;
+    margin-left: -14px;
+    padding: 4px;
+    align-items: center;
+}
+li:hover {
+    background-color: rgb(245, 254, 236);
+}
+
+.delete-btn {
+    background-color: rgb(241, 177, 177);
+    transition: color 0.5s ease-in-out;
+    border-radius: 5px;
+}
+
+.delete-btn:hover {
+    color: white;
+}
